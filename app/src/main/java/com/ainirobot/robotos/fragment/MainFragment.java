@@ -61,6 +61,18 @@ public class MainFragment extends BaseFragment {
                 switchFragment(ElectricDoorActionControlFragment.newInstance());
             }
         });
+        root.findViewById(R.id.arm_control).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switchFragment(ArmControlFragment.newInstance());
+            }
+        });
+        mSport_scene.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switchFragment(SportFragment.newInstance());
+            }
+        });
         root.findViewById(R.id.body_follow).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -91,13 +103,6 @@ public class MainFragment extends BaseFragment {
             @Override
             public void onClick(View v) {
                 switchFragment(SpeechFragment.newInstance());
-            }
-        });
-
-        mSport_scene.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                switchFragment(SportFragment.newInstance());
             }
         });
 
